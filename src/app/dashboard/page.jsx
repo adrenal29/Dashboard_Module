@@ -12,7 +12,7 @@ const page = () => {
   }
   return (
     <div className='flex'>
-      <div className={`sideBar bg-white w-1/5 ${showSidebar ? 'absolute' : 'hidden sm:block'}`} style={{ zIndex: 9999 }}>
+      <div className={`sideBar bg-white w-1/5 ${showSidebar ? 'absolute' : 'hidden sm:block'} `} style={{ zIndex: 9999 }}>
         <div className="head m-10 flex justify-content">
           <img src="./icons/DashLogo.svg" alt="" />
           <img src="./icons/Close.svg" alt="" className='md:hidden' style={{'marginLeft':'50%'}} onClick={()=>setShowSidebar(false)}/>
@@ -49,6 +49,7 @@ const page = () => {
         </div>
 
       </div>
+      {showSidebar?<></>:
       <div className="content w-screen">
         <div className="navbar flex mt-10 justify-between">
           <h1 className="hidden sm:block ml-10">Upload CSV</h1>
@@ -69,7 +70,7 @@ const page = () => {
           </div>
         </div>
       </div>
-
+      }
     </div>
   )
 }

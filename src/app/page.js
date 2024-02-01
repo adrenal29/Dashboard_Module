@@ -40,6 +40,9 @@ export default function Home() {
             <div className="ml-6 mt-6 loginForm ">
               <Form />
             </div>
+            <div className="md:hidden mx-auto mt-5">
+            <img src="./icons/SocialFooter.svg" ></img>  
+            </div>
           </div>
         </div>
       </div>
