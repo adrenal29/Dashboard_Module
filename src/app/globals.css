@@ -97,6 +97,7 @@ margin:25vh 15vw;
 }
 .loginForm{
   width: 80%;
+  border-radius: 10px;
 }
 .content{
   background-color: #F8FAFF;
